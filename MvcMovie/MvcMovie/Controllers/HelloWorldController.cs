@@ -10,19 +10,26 @@ namespace MvcMovie.Controllers
     public class HelloWorldController : Controller
     {
         // GET: HelloWorld
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is my <b>default</b> action...";
-        }
-
-        public ActionResult MyCustomView()
-        {
-            var meowList = new MeowList();
-            ViewBag.MeowList = meowList.GetMockup();
-            //meowList.DoSomething();
+            // TODO: ทำ tutorial ต่อจากตรงนี้ได้เลยย
 
             return View();
         }
+
+        /* NOTICE : กัง comment ไว้ให้เมย์นะ*/
+        //public string Index()
+        //{
+        //    return "This is my <b>default</b> action...";
+        //}
+
+        //public ActionResult MyCustomView()
+        //{
+        //    var meowList = new MeowList();
+        //    ViewBag.MeowList = meowList.GetMockup();
+        //    //meowList.DoSomething();
+        //    return View();
+        //}
 
         //
         //GET: /HelloWorld/Welcome/
@@ -35,8 +42,8 @@ namespace MvcMovie.Controllers
         public string Welcome(string name, int numTimes = 1)
         {
             return HttpUtility.HtmlEncode("Hello" + name + ", NumTimes is: " + numTimes);
-
-        }*/
+        }
+        */
         public string Welcome(string name, int ID = 1)
         {
             return HttpUtility.HtmlEncode("Hello " + name + ", ID: " + ID);
