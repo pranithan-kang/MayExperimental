@@ -164,6 +164,7 @@
     </Compile>
     <Compile Include="Mockers\MeowList.cs" />
     <Compile Include="Models\Meow.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
