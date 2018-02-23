@@ -12,11 +12,17 @@ namespace MvcMovie.Controllers
         // GET: HelloWorld
         public ActionResult Index()
         {
-            // TODO: ทำ tutorial ต่อจากตรงนี้ได้เลยย
+            // TODO: ทำ tutorial ต่อจากตรงนี้ได้เลยย        
+           return View();
+        }
+
+        public ActionResult Welcome(string name, int numTimes = 1)
+        {
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
 
             return View();
         }
-
         /* NOTICE : กัง comment ไว้ให้เมย์นะ*/
         //public string Index()
         //{
@@ -43,11 +49,12 @@ namespace MvcMovie.Controllers
         {
             return HttpUtility.HtmlEncode("Hello" + name + ", NumTimes is: " + numTimes);
         }
-        */
+        
         public string Welcome(string name, int ID = 1)
         {
             return HttpUtility.HtmlEncode("Hello " + name + ", ID: " + ID);
         }
+*/
     }
 
 }

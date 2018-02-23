@@ -1,0 +1,19 @@
+﻿@*{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+*@
+
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    @for (int i = 0; i < ViewBag.NumTimes; i++)
+    {
+        <li>@ViewBag.Message</li>
+    }
+</ul>
+
+<!-- https://docs.microsoft.com/en-us/aspnet/visual-studio/overview/2013/aspnet-scaffolding-overview -->
